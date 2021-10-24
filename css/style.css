@@ -1,0 +1,252 @@
+html{
+    box-sizing:border-box;
+    font-size: 10px;
+  }
+
+*,*::before,*::after{
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-size: 0;               /* 解決 body 上方莫名空白字元 */
+    width: 1260px;
+    height: 940px;
+    background-color: #edf2c5;
+}
+.container{                     /* 包含 header 和 article */
+    width: 940px;
+    height: 880px;
+    margin: 0 160px;
+    padding: 53px 0 35px;
+    font-family: 'ArialMT Regular',Arial, Helvetica, sans-serif;
+}
+
+
+/* header 區 */
+header{
+    height: 94px;
+    margin-bottom: 20px;
+}
+.header{
+    height: 42px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+    /* 左上 logo */
+.logo{
+    width: 271px;
+    display: flex;
+    flex-direction:column;
+}
+.textA{
+    text-align: top;
+    padding: 0px;
+    margin: 0px;
+    color: #778a50;
+    font-size: 4.4rem;
+    line-height: 3.6rem;
+    font-family: 'Arial Black', 'Arial Narrow Bold', sans-serif;
+    align-self: flex-start;
+}
+    /* 右上按鍵 */
+.bottonSpace{
+    display: flex;
+    width: 200px;
+    height: 33px;
+    padding-top: 8px;
+    margin-bottom: 9px;
+    justify-content: space-between;
+}
+        /* 左方 sns */
+.sns{
+    width: 70px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+        /* 右方按鍵 */
+.user{
+    width: 130px;
+    padding-left: 10px;
+    border-left: #778a50 1px solid;
+    display: flex;
+    justify-content: space-between;
+}
+.Botton{
+    color: 778a50;
+    font-size: 1.4rem;
+    line-height: 25px;
+    border: #778a50 1px solid;
+    border-radius: 3px;
+}
+.login{
+    width: 60px;
+}
+.join{
+    width: 50px;
+}
+.user a{
+    display: block;
+    color: #778a50;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Arial BoldMT','Arial Narrow Bold', sans-serif;
+    font-weight: bold;
+}
+         /* 按鍵回饋 */
+.Botton:hover{
+    background-color: #778a50;
+}
+.user a:hover{
+    color: #edf2c5;
+}
+
+
+    /* nav 區 */
+nav{
+    background-color: #778a50;
+    height: 44px;
+    margin-top: 8px 0 20px;
+    border: #778a50 1px solid;
+    border-radius: 3px;
+}
+.nav-list{
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+.textB{         /* 導覽列和各區標題用字型 */
+    margin: 0px;
+    color: #edf2c5;
+    font-size: 1.6rem;
+    font-family: 'Arial Black', 'Arial Narrow Bold', sans-serif;
+}
+nav .textB{
+    list-style: none;
+    text-align: center;
+}
+.textB a{
+    display: block;
+    color: #edf2c5;
+    text-decoration: none;
+    line-height: 42px;
+    padding: 0 30px;
+}
+         /* 按鍵回饋 */
+.textB a:hover{
+    background-color: #edf2c5;
+    color: #778a50;
+    border-radius: 3px;
+}
+nav .textB{
+    height: 44px;
+}
+
+
+/* article 區 */
+article{
+    height: 678px;
+    margin-top: 20px;
+}
+.mainPhoto{
+    height: 448px;
+    margin-top: 20px 0 30px;
+}
+    /* 下方 */
+.other{
+    height: 200px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.vegetables{
+    height: 200px;
+    width: 445px;
+}
+.contact{
+    height: 200px;
+    width: 445px;
+}
+        /* 各區標題 */
+.tittle{
+    background-color:#778a50;
+    height: 45px;
+    width: 445px;
+    margin-bottom: 15px;
+    border-radius: 3px;
+    display: flex;
+}
+.tittle .textB{
+    align-self: center;
+    padding-left: 30px;
+}
+        /* 各區內容 */
+.content{
+    height: 140px;
+    width: 445px;
+    margin-top: 15px;
+    display: flex;
+}
+.vegetables .content{
+    justify-content: space-between;
+}
+.contact .content{
+    background-color: #f7fbda;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 3px;
+}
+            /* 右區內容分上、分隔線、下處理 */
+.boxA{
+    width: 444px;
+    height: 72px;
+    padding:  0 15px;
+    display: flex;
+}
+.line{
+    width: 414px;
+    height: 3.5px;
+    margin: 0 15px;
+    border-bottom: #7d7d7d 1px solid;
+}
+.boxB{
+    width: 445px;
+    height: 65.5px;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.textC{            /* 內文和頁尾用字型 */
+    padding: 0px;
+    margin: 0px;
+    font-size: 1.2rem;
+    color: #7d7d7d;
+}
+.contact .content .boxA .textC{
+    line-height: 1.33;
+    align-self: center;
+}
+.contact .content .boxB .textC{
+    line-height: 1.83;
+}
+
+
+/* footer 區 */
+footer{
+    height: 60px;
+    width: 1260px;
+    background-color: 778a50;
+    padding-top: 24px 0 25px;
+    display: flex;
+    justify-content: center;
+}
+footer .textC{
+    text-align: center;
+    color: #edf2c5;
+    align-self: center;
+}
+
