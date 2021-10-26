@@ -97,10 +97,8 @@ header{
     font-weight: bold;
 }
          /* 按鍵回饋 */
-.Botton:hover{
-    background-color: #778a50;
-}
 .user a:hover{
+    background-color: #778a50;
     color: #edf2c5;
 }
 
