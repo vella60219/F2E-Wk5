@@ -10,22 +10,26 @@ html{
 }
 
 body{
-    font-size: 0;                /*解決 body 上方莫名空白字元 */
+    font-size: 0px;                /*解決 body 上方莫名空白字元 */
+    font-family: 'ArialMT Regular',Arial, Helvetica, sans-serif;
+}
+
+.container{
     width: auto;
     min-width: 1260px;
     height: 940px;
     background-color: #edf2c5;
+}
+.Flex-container{                     /* 包含 header 和 article */
     display: flex;
     flex-direction:column;
     align-items: center;
 }
-.container{                     /* 包含 header 和 article */
+.H-and-A{
     width: auto;
     min-width: 940px;
     height: 880px;
-
     padding: 53px 0 35px;
-    font-family: 'ArialMT Regular',Arial, Helvetica, sans-serif;
 }
 
 
